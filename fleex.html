@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header{
+    background-color: rgb(17, 147, 187);
+    grid-column:  1/4;
+    
+}
+.container{display: grid;
+    grid-template-columns: 2fr 1fr;
+grid-template-rows: 10% 1fr; 
+height: 80vh;}
+
+
+    main{background-color: aquamarine;
+        }
+
+    aside{background-color: rgb(35, 97, 97);
+    }
+
+        footer{background-color: rgba(176, 100, 247, 0.959);
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        
+    }
+
+        section{border: 2px solid rgb(223, 59, 149); margin: 40px;
+        padding: 20px;}
+
+        article { background-color: blanchedalmond; display: grid;
+        grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+    .floor{grid-column: 1/4;}
+    .sec, .wait, .one, .please {background-color: aliceblue;}
+    
+    </style>
+</head>
+<body>
+<div class="container">
+ <header class="page name">Шапка страницы</header> 
+ <main class="main">Основная часть
+ <article>
+  <section>Ещё 1 </section>  <section>Ещё 2</section> <section class="floor">Ещё 3</section>
+ </article>   
+ </main>  
+<aside class="aside">Боковая область</aside>
+</div> 
+<footer>
+    <section class="one">Секция футера 1</section>
+<section class="sec">Секция футера 2</section>
+<section class="wait">Секция футера 3</section>
+<section class="please">Секция футера 4</section>
+</footer> 
+
+</body>
+</html>
